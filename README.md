@@ -7,3 +7,11 @@
 5. определить взаимосвязи ранжировок.
 
 Теория (лекции, темы 1-3): http://www.habarov.spb.ru/new_es/index.htm
+
+[![Screen short](https://raw.github.com/javadev/expert-system/master/expertsystem1.png)](https://github.com/javadev/expert-system/)
+
+[![Screen short](https://raw.github.com/javadev/expert-system/master/expertsystem2.png)](https://github.com/javadev/expert-system/)
+
+[![Screen short](https://raw.github.com/javadev/expert-system/master/expertsystem3.png)](https://github.com/javadev/expert-system/)
+
+[![Screen short](https://raw.github.com/javadev/expert-system/master/expertsystem4.png)](https://github.com/javadev/expert-system/)

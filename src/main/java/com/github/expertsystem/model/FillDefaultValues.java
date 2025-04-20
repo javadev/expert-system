@@ -2,9 +2,7 @@ package com.github.expertsystem.model;
 
 import com.github.expertsystem.model.data.*;
 
-/**
- * Static class, that fills default values in model
- */
+/** Static class, that fills default values in model */
 public class FillDefaultValues {
 
     public static boolean isChangedDefaultValues = false;
@@ -25,10 +23,14 @@ public class FillDefaultValues {
         Objects.addObj(new Obj("Saturn"));
         Objects.addObj(new Obj("Samsung"));
 
-        Criterions.addCriterion(new Criterion("style", new float[]{0.3f, 0.2f, 0.3f, 0.1f, 0.2f, 0.1f}));
-        Criterions.addCriterion(new Criterion("sound", new float[] {0.4f, 0.2f, 0.3f, 0.4f, 0.3f, 0.4f}));
-        Criterions.addCriterion(new Criterion("quality", new float[] {0.2f, 0.5f, 0.2f, 0.3f, 0.3f, 0.2f}));
-        Criterions.addCriterion(new Criterion("colors", new float[] {0.1f, 0.1f, 0.2f, 0.2f, 0.2f, 0.3f}));
+        Criterions.addCriterion(
+                new Criterion("style", new float[] {0.3f, 0.2f, 0.3f, 0.1f, 0.2f, 0.1f}));
+        Criterions.addCriterion(
+                new Criterion("sound", new float[] {0.4f, 0.2f, 0.3f, 0.4f, 0.3f, 0.4f}));
+        Criterions.addCriterion(
+                new Criterion("quality", new float[] {0.2f, 0.5f, 0.2f, 0.3f, 0.3f, 0.2f}));
+        Criterions.addCriterion(
+                new Criterion("colors", new float[] {0.1f, 0.1f, 0.2f, 0.2f, 0.2f, 0.3f}));
     }
 
     public static void fillMarks() {
@@ -81,7 +83,6 @@ public class FillDefaultValues {
         Marks.setMark(Experts.findExpert(4), Objects.findObj(6), Criterions.findCriterion(0), 7);
         Marks.setMark(Experts.findExpert(5), Objects.findObj(6), Criterions.findCriterion(0), 9);
 
-
         Marks.setMark(Experts.findExpert(0), Objects.findObj(0), Criterions.findCriterion(1), 5);
         Marks.setMark(Experts.findExpert(1), Objects.findObj(0), Criterions.findCriterion(1), 10);
         Marks.setMark(Experts.findExpert(2), Objects.findObj(0), Criterions.findCriterion(1), 8);
@@ -130,7 +131,6 @@ public class FillDefaultValues {
         Marks.setMark(Experts.findExpert(3), Objects.findObj(6), Criterions.findCriterion(1), 4);
         Marks.setMark(Experts.findExpert(4), Objects.findObj(6), Criterions.findCriterion(1), 8);
         Marks.setMark(Experts.findExpert(5), Objects.findObj(6), Criterions.findCriterion(1), 6);
-
 
         Marks.setMark(Experts.findExpert(0), Objects.findObj(0), Criterions.findCriterion(2), 8);
         Marks.setMark(Experts.findExpert(1), Objects.findObj(0), Criterions.findCriterion(2), 9);
@@ -230,5 +230,4 @@ public class FillDefaultValues {
         Marks.setMark(Experts.findExpert(4), Objects.findObj(6), Criterions.findCriterion(3), 8);
         Marks.setMark(Experts.findExpert(5), Objects.findObj(6), Criterions.findCriterion(3), 10);
     }
-
 }

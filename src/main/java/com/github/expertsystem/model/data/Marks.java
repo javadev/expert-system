@@ -7,10 +7,13 @@ public class Marks {
 
     private static final float NULL_MARK = 0.0f;
 
-    // This map contains inner maps as values because of uniqueness of sets "expert + object + criterion",
+    // This map contains inner maps as values because of uniqueness of sets "expert + object +
+    // criterion",
     // which corresponds to marks.
-    private static LinkedHashMap<Expert, LinkedHashMap<Object, LinkedHashMap<Criterion, Float>>> marks
-            = new LinkedHashMap<Expert, LinkedHashMap<Object, LinkedHashMap<Criterion, Float>>>();
+    private static LinkedHashMap<Expert, LinkedHashMap<Object, LinkedHashMap<Criterion, Float>>>
+            marks =
+                    new LinkedHashMap<
+                            Expert, LinkedHashMap<Object, LinkedHashMap<Criterion, Float>>>();
 
     static {
         fillNullMap();
@@ -26,11 +29,11 @@ public class Marks {
 
     public static void fillNullMap() {
         marks.clear();
-        for(Expert expert : Experts.getExperts()) {
+        for (Expert expert : Experts.getExperts()) {
             marks.put(expert, new LinkedHashMap<Object, LinkedHashMap<Criterion, Float>>());
-            for(Obj object : Objects.getObjects()) {
+            for (Obj object : Objects.getObjects()) {
                 marks.get(expert).put(object, new LinkedHashMap<Criterion, Float>());
-                for(Criterion criterion : Criterions.getCriterions()) {
+                for (Criterion criterion : Criterions.getCriterions()) {
                     marks.get(expert).get(object).put(criterion, NULL_MARK);
                 }
             }
@@ -40,15 +43,14 @@ public class Marks {
     public static void fillRandomMap() {
         marks.clear();
         Random rand = new Random();
-        for(Expert expert : Experts.getExperts()) {
+        for (Expert expert : Experts.getExperts()) {
             marks.put(expert, new LinkedHashMap<Object, LinkedHashMap<Criterion, Float>>());
-            for(Obj object : Objects.getObjects()) {
+            for (Obj object : Objects.getObjects()) {
                 marks.get(expert).put(object, new LinkedHashMap<Criterion, Float>());
-                for(Criterion criterion : Criterions.getCriterions()) {
-                    marks.get(expert).get(object).put(criterion, (float)rand.nextInt(10));
+                for (Criterion criterion : Criterions.getCriterions()) {
+                    marks.get(expert).get(object).put(criterion, (float) rand.nextInt(10));
                 }
             }
         }
     }
-
 }

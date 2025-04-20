@@ -8,7 +8,7 @@ public class Criterion {
 
     public Criterion(String name, float[] weights) {
         this.name = name;
-        for(int i = 0; i < weights.length; i++) {
+        for (int i = 0; i < weights.length; i++) {
             this.weights[i] = weights[i];
         }
     }
@@ -30,5 +30,4 @@ public class Criterion {
     public int hashCode() {
         return name.hashCode();
     }
-
 }

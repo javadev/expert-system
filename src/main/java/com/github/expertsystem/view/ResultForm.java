@@ -1,14 +1,11 @@
 package com.github.expertsystem.view;
 
 import com.github.expertsystem.BufferedInputFile;
-
-import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import javax.swing.*;
 
-/**
- * Form shows description of calculation's process, that is reading from file
- */
+/** Form shows description of calculation's process, that is reading from file */
 public class ResultForm extends JFrame {
 
     private JPanel mainPanel;
@@ -35,11 +32,10 @@ public class ResultForm extends JFrame {
 
     private void printFromFile(String filename) {
         BufferedInputFile bufferedInputFile = new BufferedInputFile();
-        try{
+        try {
             textArea.setText(bufferedInputFile.read(filename));
         } catch (IOException e) {
             System.out.println("Error!");
         }
     }
-
 }

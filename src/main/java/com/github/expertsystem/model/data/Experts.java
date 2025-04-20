@@ -9,7 +9,7 @@ public class Experts {
 
     public static void setExperts(Object[] list) {
         experts.clear();
-        for(Object expertName : list) {
+        for (Object expertName : list) {
             addExpert(expertName.toString());
         }
     }
@@ -33,5 +33,4 @@ public class Experts {
     public static int getSize() {
         return experts.size();
     }
-
 }

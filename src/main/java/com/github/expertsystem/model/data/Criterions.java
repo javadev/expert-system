@@ -9,7 +9,7 @@ public class Criterions {
 
     public static void setCriterions(Object[] list) {
         criterions.clear();
-        for(Object criterionName : list) {
+        for (Object criterionName : list) {
             addCriterion(criterionName.toString(), new float[] {});
         }
     }
@@ -33,5 +33,4 @@ public class Criterions {
     public static int getSize() {
         return criterions.size();
     }
-
 }

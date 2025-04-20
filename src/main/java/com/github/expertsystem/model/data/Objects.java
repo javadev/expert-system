@@ -9,7 +9,7 @@ public class Objects {
 
     public static void setObjects(Object[] list) {
         objects.clear();
-        for(Object objectName : list) {
+        for (Object objectName : list) {
             addObj(objectName.toString());
         }
     }
